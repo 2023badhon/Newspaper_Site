@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesw Daily - News Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+        }
+        .main-news {
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+.main-news h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #4a148c;
+    border-bottom: 3px solid #4a148c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.news-article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-article h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.news-article h3 a {
+    text-decoration: none;
+    color: #1a237e;
+    transition: color 0.3s;
+}
+
+.news-article h3 a:hover {
+    color: #d32f2f;
+}
+
+.news-article p {
+    color: #555;
+    font-size: 15px;
+}
+
+    
+.sidebar {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+}
+
+.sidebar h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #d84315;
+    border-bottom: 2px solid #d84315;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+    display: block;
+}
+
+.sidebar ul li a::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover {
+    background-color: #ffe0b2;
+    border-radius: 8px;
+    transform: translateX(5px);
+}
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        The Daily News
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Technology</a>
+        <a href="#">Science</a>
+        <a href="#">Opinion</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-news">
+            <h2>📰 Latest News</h2>
+
+            <div class="news-article">
+                <h3>Breakthrough in Artificial Intelligence</h3>
+                <p>Researchers have announced a new model that surpasses all previous AI systems in terms of speed and accuracy. Learn more about its impact on industries worldwide.</p>
+            </div>
+
+            <div class="news-article">
+                <h3>SpaceX Launches New Mission to Mars</h3>
+                <p>Elon Musk’s SpaceX company has successfully launched its latest mission aimed at studying the potential for human life on Mars. Here’s what we know so far.</p>
+            </div>
+
+            <div class="news-article">
+                <h3>Climate Change: Urgent Actions Needed</h3>
+                <p>Global leaders are gathering to discuss stronger actions against climate change. Scientists warn that time is running out to prevent irreversible damage.</p>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <h3>🔥 Trending Topics</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><a href="#">AI in Education</a></li>
+                <li><a href="#">Electric Vehicles</a></li>
+                <li><a href="#">Health Innovations</a></li>
+                <li><a href="#">Cybersecurity Updates</a></li>
+                <li><a href="#">Space Exploration</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 News Daily. All rights reserved.</p>
+        <div>
+            <a href="mailto:badhoncsecu@gmail.com"><i class="fas fa-envelope"></i> Email</a> |
+            <a href="https://github.com/2023badhon" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="https://www.facebook.com/sumaeyramahmud.badhon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="https://www.linkedin.com/in/sumaeyra-mahmud-badhon-778144268" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
